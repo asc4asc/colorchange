@@ -6,7 +6,7 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 var elem = document.documentElement;
 
-setInterval(changecolor, 3000);
+// setInterval(changecolor, 3000);
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -48,7 +48,7 @@ const oscillator = audioCtx.createOscillator();
 }
  
 function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min) ) + min;
+  return Math.floor((Math.random() * (max - min) ) + min) * 1000 ;
 }
 
 function changecolor() {
@@ -70,7 +70,7 @@ function changecolor() {
      tmp.style.backgroundColor = "yellow"; 
      // i=1;
   } 
-  setInterval(changecolor, getRndInteger(2, 5) * 1000);
+  setInterval(changecolor, getRndInteger(2, 5));
 }
 
 document.body.addEventListener("click", event => {
