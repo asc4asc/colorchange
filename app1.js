@@ -48,7 +48,7 @@ const oscillator = audioCtx.createOscillator();
 }
  
 function getRndInteger(min, max) {
-  return Math.floor((Math.random() * (max - min) ) + min) * 1000 ;
+  return 3000 ; // Math.floor((Math.random() * (max - min) ) + min) * 1000 ;
 }
 
 function changecolor() {
