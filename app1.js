@@ -47,16 +47,8 @@ const oscillator = audioCtx.createOscillator();
   }, 500);  	
 }
  
-function changecolor1() {
-  if (i == 1) {
-    tmp.style.backgroundColor = "green"; 
-    i=0;
-    // beep();
-    // window.navigator.vibrate(1000);
-  } else {
-    tmp.style.backgroundColor = "yellow"; 
-    i=1; 
-  }
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
 }
 
 function changecolor() {
@@ -76,8 +68,9 @@ function changecolor() {
       break;	  
     default:
      tmp.style.backgroundColor = "yellow"; 
-     // i=1; 
+     // i=1;
   } 
+  setInterval(changecolor, getRndInteger(2, 5) * 1000);
 }
 
 document.body.addEventListener("click", event => {
