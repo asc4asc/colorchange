@@ -81,7 +81,18 @@ document.body.addEventListener("touchstart", event => {
     tmp.style.backgroundColor = "red"; 
     changecolor();
     stop = 1;
-  }
+  }	
 });
+
+document.body.addEventListener("click", event => {
+  // openFullscreen(); 
+  if ( stop == 0 ) {
+    tmp.style.backgroundColor = "red"; 
+    changecolor();
+    stop = 1;
+  }	
+});
+
+
 
 
