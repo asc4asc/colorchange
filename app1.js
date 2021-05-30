@@ -4,6 +4,7 @@ let tmp=document.querySelector("body");
 tmp.style.backgroundColor = "blue";
 
 let i=1;
+let stop=1;
 var elem = document.documentElement;
 
 // setInterval(changecolor, 3000);
@@ -75,7 +76,10 @@ function changecolor() {
 
 document.body.addEventListener("click", event => {
   // openFullscreen(); 
-  changecolor();
+  if ( stop == 0 ) {
+	  changecolor();
+	  stop = 1;
+  }
 });
 
 
