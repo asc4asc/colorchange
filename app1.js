@@ -75,7 +75,7 @@ function changecolor() {
   setTimeout(changecolor, getRndInteger(2, 5));
 }
 
-document.body.addEventListener("touchstart,click", event => {
+document.body.addEventListener("touchstart", event => {
   // openFullscreen(); 
   if ( stop == 0 ) {
     tmp.style.backgroundColor = "red"; 
