@@ -60,7 +60,7 @@ function changecolor1() {
 }
 
 function changecolor() {
-  i = Math.floor(Math.random() * 3);
+  let i = Math.floor(Math.random() * 3);
   switch(i) {
     case 1:
       tmp.style.backgroundColor = "green"; 
