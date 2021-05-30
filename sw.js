@@ -4,6 +4,7 @@ var filesToCache = [
   'index.html',
   'css/style.css',
   'app1.js',
+  'manifest.json'
   'js/main.js'
 ];
 
