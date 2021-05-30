@@ -6,6 +6,7 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 var elem = document.documentElement;
 
+setInterval(function, 1000)
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -46,9 +47,7 @@ const oscillator = audioCtx.createOscillator();
   }, 500);  	
 }
  
-
-document.body.addEventListener("click", event => {
-  // openFullscreen(); 
+function changecolor() {
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
@@ -58,6 +57,11 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow"; 
     i=1; 
   }
+}
+
+document.body.addEventListener("click", event => {
+  // openFullscreen(); 
+  changecolor();
 });
 
 
