@@ -60,22 +60,23 @@ function changecolor1() {
 }
 
 function changecolor() {
+  i = Math.floor(Math.random() * 3);
   switch(i) {
     case 1:
       tmp.style.backgroundColor = "green"; 
-      i=2;
+      // i=2;
       break;
     case 2:
       tmp.style.backgroundColor = "red"; 
-      i=3;
+      // i=3;
       break;
     case 3:
       tmp.style.backgroundColor = "blue"; 
-      i=0;
+      // i=0;
       break;	  
     default:
      tmp.style.backgroundColor = "yellow"; 
-     i=1; 
+     // i=1; 
   } 
 }
 
