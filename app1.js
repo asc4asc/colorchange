@@ -63,6 +63,10 @@ function changecolor() {
   switch(i) {
     case 1:
       tmp.style.backgroundColor = "green"; 
+      i=2;
+      break;
+    case 2:
+      tmp.style.backgroundColor = "red"; 
       i=0;
       break;
     default:
