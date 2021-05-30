@@ -48,7 +48,7 @@ const oscillator = audioCtx.createOscillator();
  
 
 document.body.addEventListener("click", event => {
-  openFullscreen(); 
+  // openFullscreen(); 
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
