@@ -70,7 +70,7 @@ function changecolor() {
      tmp.style.backgroundColor = "yellow"; 
      // i=1;
   } 
-  setInterval(changecolor, getRndInteger(2, 5));
+  setTimeout(changecolor, getRndInteger(2, 5));
 }
 
 document.body.addEventListener("click", event => {
