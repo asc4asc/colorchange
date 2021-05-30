@@ -47,7 +47,7 @@ const oscillator = audioCtx.createOscillator();
   }, 500);  	
 }
  
-function changecolor() {
+function changecolor1() {
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
@@ -57,6 +57,18 @@ function changecolor() {
     tmp.style.backgroundColor = "yellow"; 
     i=1; 
   }
+}
+
+function changecolor() {
+  switch(i) {
+    case 1:
+      tmp.style.backgroundColor = "green"; 
+      i=0;
+      break;
+    default:
+     tmp.style.backgroundColor = "yellow"; 
+     i=1; 
+  } 
 }
 
 document.body.addEventListener("click", event => {
