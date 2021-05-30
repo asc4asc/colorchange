@@ -1,7 +1,7 @@
 "use strict";  
 
 let tmp=document.querySelector("body");
-tmp.style.backgroundColor = "blue";
+tmp.style.backgroundColor = "lightblue";
 
 let i=1;
 let stop=0;
@@ -75,22 +75,15 @@ function changecolor() {
   setTimeout(changecolor, getRndInteger(2, 5));
 }
 
-document.body.addEventListener("touchstart", event => {
-  // openFullscreen(); 
-  if ( stop == 0 ) {
-    tmp.style.backgroundColor = "red"; 
-    changecolor();
-    stop = 1;
-  }	
-});
-
 document.body.addEventListener("click", event => {
   // openFullscreen(); 
   if ( stop == 0 ) {
     tmp.style.backgroundColor = "red"; 
     changecolor();
     stop = 1;
-  }	
+  } else {
+    tmp.style.backgroundColor = "orange";   
+  }
 });
 
 
