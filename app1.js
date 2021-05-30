@@ -53,6 +53,7 @@ function getRndInteger(min, max) {
 }
 
 function changecolor() {
+  let tmp=document.querySelector("body");
   let i = Math.floor(Math.random() * 4);
   switch(i) {
     case 1:
@@ -75,10 +76,10 @@ function changecolor() {
 }
 
 document.body.addEventListener("click", event => {
-  openFullscreen(); 
+  // openFullscreen(); 
   if ( stop == 0 ) {
-	  changecolor();
-	  stop = 1;
+    changecolor();
+    stop = 1;
   }
 });
 
