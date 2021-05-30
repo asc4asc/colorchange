@@ -75,7 +75,7 @@ function changecolor() {
 }
 
 document.body.addEventListener("click", event => {
-  // openFullscreen(); 
+  openFullscreen(); 
   if ( stop == 0 ) {
 	  changecolor();
 	  stop = 1;
