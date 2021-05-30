@@ -75,16 +75,18 @@ function changecolor() {
   setTimeout(changecolor, getRndInteger(2, 5));
 }
 
-document.body.addEventListener("click", event => {
+changecolor();
+
+//document.body.addEventListener("click", event => {
   // openFullscreen(); 
-  if ( stop == 0 ) {
-    tmp.style.backgroundColor = "red"; 
-    changecolor();
-    stop = 1;
-  } else {
-    tmp.style.backgroundColor = "orange";   
-  }
-});
+//  if ( stop == 0 ) {
+//    tmp.style.backgroundColor = "red"; 
+//    changecolor();
+//    stop = 1;
+//  } else {
+//    tmp.style.backgroundColor = "orange";   
+//  }
+//});
 
 
 
