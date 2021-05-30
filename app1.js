@@ -6,7 +6,7 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 var elem = document.documentElement;
 
-// setInterval(changecolor, 1000);
+setInterval(changecolor, 1000);
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
